@@ -4,9 +4,9 @@ import prompt
 
 
 def welcome_user():
-    print('Welcome to the Brain Games!')
+    print('\nWelcome to the Brain Games!\n')
     name = prompt.string('May I have your name? ')
-    print('Hello, {0}!'.format(name))
+    print('Hello, {0}!\n'.format(name))
 
 
 if __name__ == '__main__':
