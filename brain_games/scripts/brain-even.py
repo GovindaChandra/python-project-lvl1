@@ -7,6 +7,9 @@ import random
 import prompt
 
 NUMBER_OF_QUESTIONS = 3
+DICT_OF_ANSWERS = {'yes': 'no', 'no': 'yes'}
+GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
+GAME_WIN = 'Congratulations, {0}!'
 
 def _is_even(number):
     return "yes" if number % 2 == 0 else "no"
@@ -24,9 +27,9 @@ def brain_even():
         if answer == _is_even(number):
             print('Correct!')
             if step == NUMBER_OF_QUESTIONS - 1:
-                print('Congratulations, {0}!\n'.format(name))
+                print(GAME_WIN.format(name))
         else:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+            print(GAME_OVER.format(answer, DICT_OF_ANSWERS[answer]))
             print('Let\'s try again, {0}!\n'.format(name))
             break
 

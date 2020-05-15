@@ -5,7 +5,7 @@ import prompt
 
 def welcome_user():
     """Welcome user function."""
-    print('\nWelcome to the Brain Games!\n')
+    print('\nWelcome to the Brain Games!')
 
 def get_name():
     """Request user name."""

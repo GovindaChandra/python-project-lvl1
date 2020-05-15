@@ -3,7 +3,7 @@ packages = [
  { include = "brain_games" },
 ]
 name = "GovindaChandra_brain_games"
-version = "0.3.0"
+version = "0.3.1"
 description = ""
 authors = ["Sergey Toylyev <doyalnitay@gmail.com>"]
 
