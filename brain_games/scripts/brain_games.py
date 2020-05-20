@@ -8,6 +8,7 @@ import cli
 def main():
     """Run main exec point."""
     cli.welcome_user()
+    cli.get_name()
 
 
 if __name__ == '__main__':
