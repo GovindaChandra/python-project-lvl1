@@ -1,4 +1,4 @@
-"""Now just one function - welcome_user()."""
+"""Miscellaneous functions."""
 
 import prompt
 
@@ -12,7 +12,7 @@ def get_name():
     """Request user name and return him.
 
     Returns:
-        return user name.
+        User name.
     """
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!\n'.format(name))
