@@ -1,4 +1,4 @@
-"""Is even? - game logic"""
+"""Is even? - game logic."""
 
 import random
 
