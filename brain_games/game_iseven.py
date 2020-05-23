@@ -4,7 +4,7 @@ import random
 
 import prompt
 
-import cli
+from brain_games.cli import get_name, welcome_user
 
 NUMBER_OF_QUESTIONS = 3
 GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
@@ -17,9 +17,9 @@ def _is_even(number):
 
 def brain_even():
     """Greeting, name request, the game itself."""
-    cli.welcome_user()
+    welcome_user()
     print('Answer "yes" if number even otherwise answer "no".\n')
-    name = cli.get_name()
+    name = get_name()
 
     for step in range(NUMBER_OF_QUESTIONS):
         number = random.randint(1, 100)  # noqa: S311
