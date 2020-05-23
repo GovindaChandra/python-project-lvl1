@@ -4,12 +4,12 @@ import prompt
 
 
 def welcome_user():
-    """Welcome user function."""
+    """Welcome to Brain Games function."""
     print('\nWelcome to the Brain Games!')
 
 
 def get_name():
-    """Request user name and return him.
+    """Request user name, print a greeting and return him.
 
     Returns:
         User name.
