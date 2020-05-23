@@ -2,12 +2,12 @@
 
 """Game the correct answer is an even or odd number."""
 
-import game_iseven
+import brain_games.game_iseven
 
 
 def main():
     """Run brain even game."""
-    game_iseven.brain_even()
+    brain_games.game_iseven.brain_even()
 
 
 if __name__ == '__main__':
