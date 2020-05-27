@@ -8,7 +8,7 @@ def welcome_user():
     print('\nWelcome to the Brain Games!')
 
 
-def get_name():
+def username_request():
     """Request user name, print a greeting and return him.
 
     Returns:

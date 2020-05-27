@@ -2,13 +2,13 @@
 
 """Now I don't know what write here."""
 
-from brain_games.cli import get_name, welcome_user
+from brain_games.cli import username_request, welcome_user
 
 
 def main():
     """Run main exec point."""
     welcome_user()
-    get_name()
+    username_request()
 
 
 if __name__ == '__main__':
