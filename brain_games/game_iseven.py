@@ -6,9 +6,7 @@ import prompt
 
 from brain_games.cli import username_request, welcome_user
 
-NUMBER_OF_QUESTIONS = 3
-GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
-GAME_WIN = 'Congratulations, {0}!'
+from brain_games.game_settings import NUMBER_OF_QUESTIONS, GAME_OVER, GAME_WIN
 
 
 def _is_even(number):

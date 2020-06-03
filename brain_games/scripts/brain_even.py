@@ -6,7 +6,7 @@ from brain_games.game_iseven import brain_even
 
 
 def main():
-    """Run brain even game."""
+    """Run IS even brain game."""
     brain_even()
 
 
