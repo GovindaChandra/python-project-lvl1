@@ -9,8 +9,14 @@ from brain_games.cli import username_request, welcome_user
 from brain_games.game_settings import NUMBER_OF_QUESTIONS, GAME_OVER, GAME_WIN
 
 
-def _operators():
-    return random.choice('+', '-', '*')  # noqa: S311
+def _calc(*args):
+    arg_1, arg_2, ops = args
+    if ops == '+':
+        return arg_1 + arg_2
+    elif ops == '-':
+        return arg_1 - arg_2
+    elif ops == '*':
+        return arg_1 * arg_2
 
 
 def expression_calc():
@@ -25,7 +31,7 @@ def expression_calc():
         operator = random.choice('+', '-', '*')  # noqa: S311
         print('Question:', operand_1, operator, operand_2)
         answer = prompt.string('Your answer: ')
-        if answer == _is_c(number):
+        if answer == _calc(operand_1, operand_2, operator):
             print('Correct!')
             if step == NUMBER_OF_QUESTIONS - 1:
                 print(GAME_WIN.format(name))
