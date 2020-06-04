@@ -17,6 +17,13 @@ def _calc(args):
         return args[0] * args[1]
 
 
+def _operands_gen():
+    return (random.randint(1, 100),  # noqa: S311
+        random.randint(1, 100),  # noqa: S311
+        random.choice('+', '-', '*'),  # noqa: S311
+    )
+
+
 def expression_calc():
     """Greeting, name request, the game itself."""
     welcome_user()
@@ -24,10 +31,7 @@ def expression_calc():
     name = username_request()
 
     for step in range(NUMBER_OF_QUESTIONS):
-        operands = (random.randint(1, 100),  # noqa: S311
-            random.randint(1, 100),  # noqa: S311
-            random.choice('+', '-', '*'),  # noqa: S311
-        )
+        operands = _operands_gen()
         print('Question:', operands[0], operands[1], operands[2])
         answer = prompt.string('Your answer: ')
         if answer == _calc(operands):
