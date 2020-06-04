@@ -5,8 +5,7 @@ import random
 import prompt
 
 from brain_games.cli import username_request, welcome_user
-
-from brain_games.game_settings import NUMBER_OF_QUESTIONS, GAME_OVER, GAME_WIN
+from brain_games.game_settings import GAME_OVER, GAME_WIN, NUMBER_OF_QUESTIONS
 
 
 def _is_even(number):

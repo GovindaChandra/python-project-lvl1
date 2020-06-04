@@ -5,18 +5,16 @@ import random
 import prompt
 
 from brain_games.cli import username_request, welcome_user
+from brain_games.game_settings import GAME_OVER, GAME_WIN, NUMBER_OF_QUESTIONS
 
-from brain_games.game_settings import NUMBER_OF_QUESTIONS, GAME_OVER, GAME_WIN
 
-
-def _calc(*args):
-    arg_1, arg_2, ops = args
-    if ops == '+':
-        return arg_1 + arg_2
-    elif ops == '-':
-        return arg_1 - arg_2
-    elif ops == '*':
-        return arg_1 * arg_2
+def _calc(args):
+    if args[2] == '+':
+        return args[0] + args[1]
+    elif args[2] == '-':
+        return args[0] - args[1]
+    elif args[2] == '*':
+        return args[0] * args[1]
 
 
 def expression_calc():
@@ -26,12 +24,13 @@ def expression_calc():
     name = username_request()
 
     for step in range(NUMBER_OF_QUESTIONS):
-        operand_1 = random.randint(1, 100)  # noqa: S311
-        operand_2 = random.randint(1, 100)  # noqa: S311
-        operator = random.choice('+', '-', '*')  # noqa: S311
-        print('Question:', operand_1, operator, operand_2)
+        operands = (random.randint(1, 100),  # noqa: S311
+            random.randint(1, 100),  # noqa: S311
+            random.choice('+', '-', '*'),  # noqa: S311
+        )
+        print('Question:', operands[0], operands[1], operands[2])
         answer = prompt.string('Your answer: ')
-        if answer == _calc(operand_1, operand_2, operator):
+        if answer == _calc(operands):
             print('Correct!')
             if step == NUMBER_OF_QUESTIONS - 1:
                 print(GAME_WIN.format(name))
