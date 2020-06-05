@@ -20,7 +20,7 @@ def _calc(args):
 def _operands_gen():
     return (random.randint(1, 100),  # noqa: S311
         random.randint(1, 100),  # noqa: S311
-        random.choice('+', '-', '*'),  # noqa: S311
+        random.choice(('+', '-', '*')),  # noqa: S311
     )
 
 
@@ -32,13 +32,13 @@ def expression_calc():
 
     for step in range(NUMBER_OF_QUESTIONS):
         operands = _operands_gen()
-        print('Question:', operands[0], operands[1], operands[2])
-        answer = prompt.string('Your answer: ')
+        print('Question:', operands[0], operands[2], operands[1])
+        answer = prompt.integer('Your answer: ')
         if answer == _calc(operands):
             print('Correct!')
             if step == NUMBER_OF_QUESTIONS - 1:
                 print(GAME_WIN.format(name))
         else:
-            print(GAME_OVER.format(answer, 'yes' if answer == 'no' else 'no'))
+            print(GAME_OVER.format(answer, _calc(operands)))
             print("Let's try again, {0}!\n".format(name))
             break
