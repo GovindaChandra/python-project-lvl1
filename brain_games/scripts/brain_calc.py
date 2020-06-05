@@ -2,7 +2,7 @@
 
 """Expression calculation."""
 
-from brain_games.game_expression_calculation import expression_calc
+from brain_games.game_expression import expression_calc
 
 
 def main():
