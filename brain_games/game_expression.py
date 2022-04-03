@@ -18,10 +18,10 @@ def _calc(args):
 
 
 def _operands_gen():
-    return (random.randint(1, 100),  # noqa: S311
-        random.randint(1, 100),  # noqa: S311
-        random.choice(('+', '-', '*')),  # noqa: S311
-    )
+    first_op = random.randint(1, 100)  # noqa: S311
+    second_op = random.randint(1, 100)  # noqa: S311
+    ops_sign = random.choice(('+', '-', '*'))  # noqa: S311
+    return (first_op, second_op, ops_sign)
 
 
 def expression_calc():
