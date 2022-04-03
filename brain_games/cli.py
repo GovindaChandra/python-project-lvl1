@@ -1,4 +1,4 @@
-"""Miscellaneous functions."""
+"""Welcome functions."""
 
 import prompt
 
