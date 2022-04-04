@@ -1,10 +1,6 @@
-name: Main
+name: Linter work
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: push
 
 jobs:
   lint:
@@ -12,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: configure
+    - name: lint-checking
       run: make lint
