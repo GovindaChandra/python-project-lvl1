@@ -1,4 +1,4 @@
-"""Miscellaneous settings for game."""
+"""Global settings for games."""
 
 NUMBER_OF_QUESTIONS = 3
 GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
