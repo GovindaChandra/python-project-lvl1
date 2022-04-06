@@ -15,8 +15,8 @@ def _is_even(number):
 def brain_even():
     """Greeting, name request, the game itself."""
     welcome_user()
-    print('Answer "yes" if number even otherwise answer "no".\n')
     name = username_request()
+    print('Answer "yes" if number is even, otherwise answer "no".\n')
 
     for step in range(NUMBER_OF_QUESTIONS):
         number = random.randint(1, 100)  # noqa: S311
