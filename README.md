@@ -6,4 +6,4 @@
 
 ## Пример установки пакета и запуск игры:
 
-[![asciicast](https://asciinema.org/a/Z8HOsGr5Rmfxcbfdkph8wyXXo.svg)](https://asciinema.org/a/Z8HOsGr5Rmfxcbfdkph8wyXXo)
+[![asciicast](https://asciinema.org/a/hc5Qe5Y9Edn4luGSrt0yfq0z8.svg)](https://asciinema.org/a/hc5Qe5Y9Edn4luGSrt0yfq0z8)
