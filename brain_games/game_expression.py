@@ -4,7 +4,7 @@ import random
 
 import prompt
 
-from brain_games.cli import username_request, welcome_user
+from brain_games.cli import welcome_user
 from brain_games.game_settings import GAME_OVER, GAME_WIN, NUMBER_OF_QUESTIONS
 
 
@@ -26,8 +26,7 @@ def _operands_gen():
 
 def expression_calc():
     """Greeting, name request, the game itself."""
-    welcome_user()
-    name = username_request()
+    name = welcome_user()
     print('What is the result of the expression?.\n')
 
     for step in range(NUMBER_OF_QUESTIONS):
