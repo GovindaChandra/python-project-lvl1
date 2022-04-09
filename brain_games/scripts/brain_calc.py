@@ -2,12 +2,12 @@
 
 """Expression calculation."""
 
-from brain_games.game_expression import expression_calc
+from brain_games.game_expression import brain_calc
 
 
 def main():
     """Run Expression calculation brain game."""
-    expression_calc()
+    brain_calc()
 
 
 if __name__ == '__main__':

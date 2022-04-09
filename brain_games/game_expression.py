@@ -24,8 +24,8 @@ def _operands_gen():
     return (first_op, second_op, ops_sign)
 
 
-def expression_calc():
-    """Greeting, name request, the game itself."""
+def brain_calc():
+    """Brain calc game logic."""
     name = welcome_user()
     print('What is the result of the expression?\n')
 
