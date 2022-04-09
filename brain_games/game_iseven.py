@@ -12,12 +12,16 @@ def _is_even(number):
     return 'yes' if number % 2 == 0 else 'no'
 
 
+def _number_gen():
+    return random.randint(1, 100)  # noqa: S311
+
+
 def brain_even():
     """Brain even game logic."""
     name = welcome('Answer "yes" if number is even, otherwise answer "no".\n')
 
     for step in range(NUMBER_OF_QUESTIONS):
-        number = random.randint(1, 100)  # noqa: S311
+        number = _number_gen()
         print('Question:', number)
         answer = prompt.string('Your answer: ')
         if answer == _is_even(number):
