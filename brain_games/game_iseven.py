@@ -25,7 +25,7 @@ def brain_even():
             print('Correct!')
             if step == NUMBER_OF_QUESTIONS - 1:
                 print(GAME_WIN.format(name))
-        else:  #'yes' if answer == 'no' else 'no'
+        else:  # 'yes' if answer == 'no' else 'no'
             print(GAME_OVER.format(answer, _is_even(number)))
             print("Let's try again, {0}!\n".format(name))
             break
