@@ -2,12 +2,12 @@
 
 """Now I don't know what write here."""
 
-from brain_games.cli import username_request, welcome_user
+from brain_games.cli import username_request, welcome
 
 
 def main():
     """Run main exec point."""
-    welcome_user()
+    welcome()
     username_request()
 
 
