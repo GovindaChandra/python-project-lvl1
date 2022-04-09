@@ -8,13 +8,13 @@ from brain_games.cli import welcome
 from brain_games.game_settings import GAME_OVER, GAME_WIN, NUMBER_OF_QUESTIONS
 
 
-def _calc(args):
-    if args[2] == '+':
-        return args[0] + args[1]
-    elif args[2] == '-':
-        return args[0] - args[1]
-    elif args[2] == '*':
-        return args[0] * args[1]
+def _calc(operands):
+    if operands[2] == '+':
+        return operands[0] + operands[1]
+    elif operands[2] == '-':
+        return operands[0] - operands[1]
+    elif operands[2] == '*':
+        return operands[0] * operands[1]
 
 
 def _operands_gen():
