@@ -27,7 +27,7 @@ def _operands_gen():
 def expression_calc():
     """Greeting, name request, the game itself."""
     name = welcome_user()
-    print('What is the result of the expression?.\n')
+    print('What is the result of the expression?\n')
 
     for step in range(NUMBER_OF_QUESTIONS):
         operands = _operands_gen()
