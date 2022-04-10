@@ -9,19 +9,19 @@ from brain_games.game_settings import GAME_OVER, GAME_WIN, NUMBER_OF_QUESTIONS
 
 
 def _calc(operands):
-    if operands[2] == '+':
-        return operands[0] + operands[1]
-    elif operands[2] == '-':
-        return operands[0] - operands[1]
-    elif operands[2] == '*':
-        return operands[0] * operands[1]
+    if operands[1] == '+':
+        return operands[0] + operands[2]
+    elif operands[1] == '-':
+        return operands[0] - operands[2]
+    elif operands[1] == '*':
+        return operands[0] * operands[2]
 
 
 def _operands_gen():
     first_op = random.randint(1, 100)  # noqa: S311
     second_op = random.randint(1, 100)  # noqa: S311
     ops_sign = random.choice(('+', '-', '*'))  # noqa: S311
-    return (first_op, second_op, ops_sign)
+    return (first_op, ops_sign, second_op)
 
 
 def brain_calc():
@@ -30,7 +30,7 @@ def brain_calc():
 
     for step in range(NUMBER_OF_QUESTIONS):
         operands = _operands_gen()
-        print('Question:', operands[0], operands[2], operands[1])
+        print('Question:', operands[0], operands[1], operands[2])
         answer = prompt.integer('Your answer: ')
         if answer == _calc(operands):
             print('Correct!')
