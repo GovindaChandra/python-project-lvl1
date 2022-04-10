@@ -6,8 +6,8 @@
 
 ## Пример установки пакета, запуска игр и геймплея:
 
-### Игра на проверку четности числа
+### Игра на проверку четности числа:
 [![asciicast](https://asciinema.org/a/hc5Qe5Y9Edn4luGSrt0yfq0z8.svg)](https://asciinema.org/a/hc5Qe5Y9Edn4luGSrt0yfq0z8)
 
-### Игра на вычисление выражения
+### Игра на вычисление выражений:
 [![asciicast](https://asciinema.org/a/N3nuhQoZAoBzKnMvLK1VuKSgi.svg)](https://asciinema.org/a/N3nuhQoZAoBzKnMvLK1VuKSgi)
