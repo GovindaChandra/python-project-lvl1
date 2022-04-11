@@ -5,7 +5,11 @@ import random
 import prompt
 
 from brain_games.cli import welcome
-from brain_games.games.game_settings import GAME_OVER, GAME_WIN, NUMBER_OF_QUESTIONS
+from brain_games.games.game_settings import (
+    GAME_OVER,
+    GAME_WIN,
+    NUMBER_OF_QUESTIONS,
+)
 
 
 def _calc(operands):
