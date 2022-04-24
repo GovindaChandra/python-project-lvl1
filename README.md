@@ -11,3 +11,6 @@
 
 ### Игра на вычисление выражений:
 [![asciicast](https://asciinema.org/a/N3nuhQoZAoBzKnMvLK1VuKSgi.svg)](https://asciinema.org/a/N3nuhQoZAoBzKnMvLK1VuKSgi)
+
+### Игра на нахождение наибольшего  общего делителя:
+[![asciicast](https://asciinema.org/a/YSFajAKoXYxTHWYarYkl0mMbn.svg)](https://asciinema.org/a/YSFajAKoXYxTHWYarYkl0mMbn)
