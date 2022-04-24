@@ -20,7 +20,7 @@ def _brain_calc_game_function():
     ops_sign = random.choice(('+', '-', '*'))  # noqa: S311
     correct_answer = _calc((first_op, ops_sign, second_op))
     expression = '{0} {1} {2}'.format(first_op, ops_sign, second_op)
-    return expression, correct_answer
+    return expression, str(correct_answer)
 
 
 def brain_calc():
