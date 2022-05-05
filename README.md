@@ -14,3 +14,6 @@
 
 ### Игра на нахождение наибольшего  общего делителя:
 [![asciicast](https://asciinema.org/a/YSFajAKoXYxTHWYarYkl0mMbn.svg)](https://asciinema.org/a/YSFajAKoXYxTHWYarYkl0mMbn)
+
+### Игра "Арифметическая прогрессия":
+[![asciicast](https://asciinema.org/a/W68hffS5E6VguoyMebyxdW7z3.svg)](https://asciinema.org/a/W68hffS5E6VguoyMebyxdW7z3)
