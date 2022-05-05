@@ -6,13 +6,13 @@
 
 ## Пример установки пакета, запуска игр и геймплея:
 
-### Игра на проверку четности числа:
+### Игра "Проверка на чётность":
 [![asciicast](https://asciinema.org/a/hc5Qe5Y9Edn4luGSrt0yfq0z8.svg)](https://asciinema.org/a/hc5Qe5Y9Edn4luGSrt0yfq0z8)
 
-### Игра на вычисление выражений:
+### Игра "Калькулятор":
 [![asciicast](https://asciinema.org/a/N3nuhQoZAoBzKnMvLK1VuKSgi.svg)](https://asciinema.org/a/N3nuhQoZAoBzKnMvLK1VuKSgi)
 
-### Игра на нахождение наибольшего  общего делителя:
+### Игра "НОД":
 [![asciicast](https://asciinema.org/a/YSFajAKoXYxTHWYarYkl0mMbn.svg)](https://asciinema.org/a/YSFajAKoXYxTHWYarYkl0mMbn)
 
 ### Игра "Арифметическая прогрессия":
