@@ -11,9 +11,9 @@ def _is_prime(number):
     index = 2
     while index <= upper_bound:
         if number // index == 0:
-            return True
+            return False
         index += 1
-    return False
+    return True
 
 
 def _brain_prime_game_function():
