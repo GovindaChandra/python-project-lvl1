@@ -10,7 +10,7 @@ def _is_prime(number):
     upper_bound = math.sqrt(number)
     index = 2
     while index <= upper_bound:
-        if number // index == 0:
+        if number % index == 0:
             return False
         index += 1
     return True
