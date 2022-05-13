@@ -4,7 +4,7 @@ packages = [
 ]
 name = "hexlet-code"
 version = "0.3.8"
-description = ""
+description = "First project from Python backend developer course by Hexlet"
 authors = ["Sergey Toylyev <doyalnitay@gmail.com>"]
 
 [tool.poetry.dependencies]
