@@ -16,7 +16,8 @@ def game_engine(game_rule, game_function):
         game_rule: Describe game rules
         game_function: game logic function
     """
-    name = welcome(game_rule)
+    name = welcome()
+    print(game_rule)
     for step in range(NUMBER_OF_QUESTIONS):
         expression, correct_answer = game_function()
         print('Question:', expression)

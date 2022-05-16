@@ -7,7 +7,7 @@ from brain_games.cli import welcome
 
 def main():
     """Run main exec point."""
-    welcome('')
+    welcome()
 
 
 if __name__ == '__main__':
