@@ -1,14 +1,9 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) [![Python CI](https://github.com/GovindaChandra/python-project-lvl1/actions/workflows/make_lint.yml/badge.svg)](https://github.com/GovindaChandra/python-project-lvl1/actions/workflows/make_lint.yml) [![Hexlet-check](https://github.com/GovindaChandra/python-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/GovindaChandra/python-project-lvl1/actions/workflows/hexlet-check.yml)
 # Игры разума
 
-Первый проект на [Хекслет](https://ru.hexlet.io/my/projects). Представляет собой совокупность консольных игр:
-1. Проверка на четность
-2. Вычисление выражения
-3. Нахождение наибольшего общего делителя
-4. Нахождение значения из арифметической прогрессии
-5. Проверка числа на простоту
+Первый проект на [Хекслет](https://ru.hexlet.io/my/projects).
 
-Буду погружаться в экосистему Python, учиться настраивать рабочее окружение. Постараюсь подружиться с flake8 и poetry. Полнее изучу гитхаб, поучусь работать с внешними репозиториями. Постараюсь получить опыт построения архитектуры приложения и написания чистого кода. В чем мне с радостью, ~~или нет,~~ поможет ментор.
+На примере создания совокупности простейших консольных игр, происходит погружение в экосистему Python. Буду учиться настраивать рабочее окружение. Постараюсь подружиться с flake8 и poetry. Полнее изучу гитхаб, поучусь работать с внешними репозиториями. Постараюсь получить опыт построения архитектуры приложения и написания чистого кода. В чем мне с радостью, ~~или нет,~~ поможет ментор.
 
 ## Пример установки пакета, запуска игр и геймплея:
 
