@@ -3,7 +3,7 @@
 import math
 import random
 
-from brain_games.games.game_settings import game_engine
+from brain_games.games.game_settings import start_game
 
 
 def _is_prime(number):
@@ -25,4 +25,4 @@ def _brain_prime_game_function():
 def brain_prime():
     """Start the brain-prime game."""
     rule = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
-    game_engine(rule, _brain_prime_game_function)
+    start_game(rule, _brain_prime_game_function)

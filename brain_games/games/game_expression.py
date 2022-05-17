@@ -2,7 +2,7 @@
 
 import random
 
-from brain_games.games.game_settings import game_engine
+from brain_games.games.game_settings import start_game
 
 
 def _calc(operands):
@@ -26,4 +26,4 @@ def _brain_calc_game_function():
 def brain_calc():
     """Start the brain-calc game."""
     game_rule = 'What is the result of the expression?\n'
-    game_engine(game_rule, _brain_calc_game_function)
+    start_game(game_rule, _brain_calc_game_function)

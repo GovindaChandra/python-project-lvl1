@@ -2,7 +2,7 @@
 
 import random
 
-from brain_games.games.game_settings import game_engine
+from brain_games.games.game_settings import start_game
 
 
 def _brain_even_game_function():
@@ -14,4 +14,4 @@ def _brain_even_game_function():
 def brain_even():
     """Start the brain-even game."""
     game_rule = 'Answer "yes" if number is even, otherwise answer "no".\n'
-    game_engine(game_rule, _brain_even_game_function)
+    start_game(game_rule, _brain_even_game_function)

@@ -9,7 +9,7 @@ GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
 GAME_WIN = 'Congratulations, {0}!\n'
 
 
-def game_engine(game_rule, game_function):
+def start_game(game_rule, game_function):
     """Call greeting, lunch game function.
 
     Parameters:

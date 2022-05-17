@@ -2,7 +2,7 @@
 
 import random
 
-from brain_games.games.game_settings import game_engine
+from brain_games.games.game_settings import start_game
 
 
 def _brain_progression_game_function():
@@ -19,4 +19,4 @@ def _brain_progression_game_function():
 def brain_progression():
     """Start the brain-gcd game."""
     game_rule = 'What number is missing in the progression?\n'
-    game_engine(game_rule, _brain_progression_game_function)
+    start_game(game_rule, _brain_progression_game_function)
