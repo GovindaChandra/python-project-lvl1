@@ -4,9 +4,8 @@ import prompt
 
 from brain_games.cli import welcome
 
-NUMBER_OF_QUESTIONS = 3
+NUMBER_OF_ROUNDS = 3
 GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
-GAME_WIN = 'Congratulations, {0}!\n'
 
 
 def start_game(game_rule, game_function):
@@ -18,15 +17,14 @@ def start_game(game_rule, game_function):
     """
     name = welcome()
     print(game_rule)
-    for step in range(NUMBER_OF_QUESTIONS):
+    for _ in range(NUMBER_OF_ROUNDS):
         expression, correct_answer = game_function()
         print('Question:', expression)
         answer = prompt.string('Your answer: ')
-        if answer == correct_answer:
-            print('Correct!')
-            if step == NUMBER_OF_QUESTIONS - 1:
-                print(GAME_WIN.format(name))
-        else:
+        if answer != correct_answer:
             print(GAME_OVER.format(answer, correct_answer))
             print("Let's try again, {0}!\n".format(name))
             break
+        print('Correct!')
+    else:
+        print('Congratulations, {0}!\n'.format(name))
