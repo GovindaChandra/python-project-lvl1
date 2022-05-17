@@ -2,7 +2,7 @@
 
 import random
 
-from brain_games.games.game_settings import start_game
+from brain_games.game_engine.game_engine import start_game
 
 
 def _brain_progression_game_function():
