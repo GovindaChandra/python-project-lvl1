@@ -2,7 +2,7 @@
 
 """Game the correct answer is an even or odd number."""
 
-from brain_games.games.game_gcd import brain_gcd
+from brain_games.games.gcd import brain_gcd
 
 
 def main():
