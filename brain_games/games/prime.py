@@ -1,13 +1,23 @@
 """Expression calculation game logic."""
 
 import math
-import random
+import secrets
 
 from brain_games.game_engine.game_engine import start_game
 
+GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
 
-def _is_prime(number):
-    upper_bound = math.sqrt(number)
+
+def is_prime(number):
+    """Check a given number is prime or not and return True or False.
+
+    Parameters:
+        number: Given number
+
+    Returns:
+        return: True or False
+    """
+    upper_bound = math.sqrt(abs(number))
     index = 2
     while index <= upper_bound:
         if number % index == 0:
@@ -16,13 +26,13 @@ def _is_prime(number):
     return True
 
 
-def _brain_prime_game_function():
-    number = random.randint(4, 100)  # noqa: S311
-    correct_answer = 'yes' if _is_prime(number) else 'no'
+def _game_data_generation():
+    secrets_generator = secrets.SystemRandom()
+    number = secrets_generator.randint(1, 100)
+    correct_answer = 'yes' if is_prime(number) else 'no'
     return str(number), correct_answer
 
 
 def brain_prime():
     """Start the brain-prime game."""
-    rule = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
-    start_game(rule, _brain_prime_game_function)
+    start_game(GAME_RULE, _game_data_generation)
