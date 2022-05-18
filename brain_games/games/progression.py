@@ -1,16 +1,22 @@
 """Arithmetic progression game logic."""
 
-import random
+import secrets
 
 from brain_games.game_engine.game_engine import start_game
 
+GAME_RULE = 'What number is missing in the progression?\n'
 
-def _brain_progression_game_function():
-    count_nums = random.randint(5, 10)  # noqa: S311
-    first_num = random.randint(1, 100)  # noqa: S311
-    diff = random.randint(1, count_nums)  # noqa: S311
-    diff *= random.choice([-1, 1])  # noqa: S311
-    progression = list(range(first_num, first_num + count_nums * diff, diff))
+
+def _game_data_generation():
+    count = secrets.SystemRandom().randint(5, 10)
+    first_num = secrets.SystemRandom().randint(1, 100)
+    diff = secrets.SystemRandom().randint(-count, count)
+    progression = []
+    if diff == 0:
+        for _ in range(count):
+            progression.append(first_num)
+    else:
+        progression = list(range(first_num, first_num + count * diff, diff))
     correct_answer = progression[abs(diff) - 1]
     progression[abs(diff) - 1] = '..'
     return ' '.join(map(str, progression)), str(correct_answer)
@@ -18,5 +24,4 @@ def _brain_progression_game_function():
 
 def brain_progression():
     """Start the brain-gcd game."""
-    game_rule = 'What number is missing in the progression?\n'
-    start_game(game_rule, _brain_progression_game_function)
+    start_game(GAME_RULE, _game_data_generation)
