@@ -4,6 +4,8 @@ import secrets
 
 from brain_games.game_engine.game_engine import start_game
 
+GAME_RULE = 'What is the result of the expression?\n'
+
 
 def _calc(num1, num2, operator):
     if operator == '+':
@@ -14,7 +16,7 @@ def _calc(num1, num2, operator):
         return num1 * num2
 
 
-def _brain_calc_game_function():
+def _game_data_generation():
     secrets_generator = secrets.SystemRandom()
     num1 = secrets_generator.randint(1, 100)
     num2 = secrets_generator.randint(1, 100)
@@ -25,5 +27,4 @@ def _brain_calc_game_function():
 
 def brain_calc():
     """Start the brain-calc game."""
-    game_rule = 'What is the result of the expression?\n'
-    start_game(game_rule, _brain_calc_game_function)
+    start_game(GAME_RULE, _game_data_generation)
