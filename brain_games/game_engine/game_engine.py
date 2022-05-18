@@ -1,7 +1,7 @@
 """Global settings for games."""
 
 import prompt
-from brain_games.cli import welcome
+from brain_games.cli import welcome_user
 
 NUMBER_OF_ROUNDS = 3
 GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
@@ -14,7 +14,7 @@ def start_game(game_rule, game_function):
         game_rule: Describe game rules
         game_function: game logic function
     """
-    name = welcome()
+    name = welcome_user()
     print(game_rule)
     for _ in range(NUMBER_OF_ROUNDS):
         expression, correct_answer = game_function()

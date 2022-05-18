@@ -3,7 +3,7 @@
 import prompt
 
 
-def welcome():
+def welcome_user():
     """Welcome, request user name, print a greeting and return him.
 
     Returns:
