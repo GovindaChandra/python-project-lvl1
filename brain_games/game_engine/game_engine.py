@@ -1,7 +1,6 @@
 """Global settings for games."""
 
 import prompt
-
 from brain_games.cli import welcome
 
 NUMBER_OF_ROUNDS = 3
