@@ -1,20 +1,21 @@
 """Global settings for games."""
 
 import prompt
-from brain_games.cli import welcome_user
 
 NUMBER_OF_ROUNDS = 3
 GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
 
 
 def start_game(game_rule, game_data_function):
-    """Call greeting, lunch game function.
+    """Print greeting, lunch game function.
 
     Parameters:
         game_rule: Describe game rules
         game_data_function: game logic and data generation function
     """
-    name = welcome_user()
+    print('\nWelcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print('Hello, {0}!\n'.format(name))
     print(game_rule)
     for _ in range(NUMBER_OF_ROUNDS):
         expression, correct_answer = game_data_function()
