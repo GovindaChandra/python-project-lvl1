@@ -11,15 +11,13 @@ def game_data_generation():
     Returns:
         return: a tuple of question and correct answer
     """
-    count = random.Random().randint(5, 10)
+    members_count = random.Random().randint(5, 10)
     first_num = random.Random().randint(1, 100)
-    diff = random.Random().randint(-count, count)
+    diff = random.Random().randint(-members_count, members_count)
     progression = []
-    if diff == 0:
-        for _ in range(count):
-            progression.append(first_num)
-    else:
-        progression = list(range(first_num, first_num + count * diff, diff))
+    for _ in range(members_count):
+        progression.append(first_num)
+        first_num += diff
     correct_answer = progression[abs(diff) - 1]
     progression[abs(diff) - 1] = '..'
     return ' '.join(map(str, progression)), str(correct_answer)
