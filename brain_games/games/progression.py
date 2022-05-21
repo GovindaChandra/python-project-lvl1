@@ -1,6 +1,6 @@
 """Arithmetic progression game logic."""
 
-import secrets
+import random
 
 GAME_RULE = 'What number is missing in the progression?\n'
 
@@ -11,9 +11,9 @@ def game_data_generation():
     Returns:
         return: a tuple of question and correct answer
     """
-    count = secrets.SystemRandom().randint(5, 10)
-    first_num = secrets.SystemRandom().randint(1, 100)
-    diff = secrets.SystemRandom().randint(-count, count)
+    count = random.Random().randint(5, 10)
+    first_num = random.Random().randint(1, 100)
+    diff = random.Random().randint(-count, count)
     progression = []
     if diff == 0:
         for _ in range(count):

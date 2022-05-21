@@ -1,7 +1,7 @@
 """Expression calculation game logic."""
 
 import math
-import secrets
+import random
 
 GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
 
@@ -30,7 +30,7 @@ def game_data_generation():
     Returns:
         return: a tuple of question and correct answer
     """
-    secrets_generator = secrets.SystemRandom()
-    number = secrets_generator.randint(1, 100)
+    random_generator = random.Random()
+    number = random_generator.randint(1, 100)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return str(number), correct_answer

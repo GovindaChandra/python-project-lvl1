@@ -1,6 +1,6 @@
 """Expression calculation game logic."""
 
-import secrets
+import random
 
 GAME_RULE = 'What is the result of the expression?\n'
 
@@ -20,9 +20,9 @@ def game_data_generation():
     Returns:
         return: a tuple of question and correct answer
     """
-    secrets_generator = secrets.SystemRandom()
-    num1 = secrets_generator.randint(1, 100)
-    num2 = secrets_generator.randint(1, 100)
-    operator = secrets_generator.choice(('+', '-', '*'))
+    random_generator = random.Random()
+    num1 = random_generator.randint(1, 100)
+    num2 = random_generator.randint(1, 100)
+    operator = random_generator.choice(('+', '-', '*'))
     correct_answer = _calc(num1, num2, operator)
     return '{0} {1} {2}'.format(num1, operator, num2), str(correct_answer)
