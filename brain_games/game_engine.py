@@ -6,19 +6,18 @@ NUMBER_OF_ROUNDS = 3
 GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
 
 
-def start_game(game_rule, game_data_function):
+def start_game(game):
     """Print greeting, lunch game function.
 
     Parameters:
-        game_rule: Describe game rules
-        game_data_function: game logic and data generation function
+        game: Contain game rules, game logic, data generation function
     """
     print('\nWelcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!\n'.format(name))
-    print(game_rule)
+    print(game.GAME_RULE)
     for _ in range(NUMBER_OF_ROUNDS):
-        expression, correct_answer = game_data_function()
+        expression, correct_answer = game.game_data_function()
         print('Question:', expression)
         answer = prompt.string('Your answer: ')
         if answer != correct_answer:
