@@ -2,12 +2,15 @@
 
 import secrets
 
-from brain_games.game_engine.game_engine import start_game
-
 GAME_RULE = 'What number is missing in the progression?\n'
 
 
-def _game_data_generation():
+def game_data_generation():
+    """Generate question and correct answer for game.
+
+    Returns:
+        return: a tuple of question and correct answer
+    """
     count = secrets.SystemRandom().randint(5, 10)
     first_num = secrets.SystemRandom().randint(1, 100)
     diff = secrets.SystemRandom().randint(-count, count)
@@ -20,8 +23,3 @@ def _game_data_generation():
     correct_answer = progression[abs(diff) - 1]
     progression[abs(diff) - 1] = '..'
     return ' '.join(map(str, progression)), str(correct_answer)
-
-
-def brain_progression():
-    """Start the brain-gcd game."""
-    start_game(GAME_RULE, _game_data_generation)

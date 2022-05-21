@@ -3,8 +3,6 @@
 import math
 import secrets
 
-from brain_games.game_engine.game_engine import start_game
-
 GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
 
 
@@ -26,13 +24,13 @@ def is_prime(number):
     return True
 
 
-def _game_data_generation():
+def game_data_generation():
+    """Generate question and correct answer for game.
+
+    Returns:
+        return: a tuple of question and correct answer
+    """
     secrets_generator = secrets.SystemRandom()
     number = secrets_generator.randint(1, 100)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return str(number), correct_answer
-
-
-def brain_prime():
-    """Start the brain-prime game."""
-    start_game(GAME_RULE, _game_data_generation)
