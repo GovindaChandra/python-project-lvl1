@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
-"""Game the correct answer is an even or odd number."""
+"""The game of finding a member of an arithmetic progression."""
 
-from brain_games.games.progression import brain_progression
+from brain_games.game_engine import start_game
+from brain_games.games import progression
 
 
 def main():
-    """Run greatest common divisior brain game."""
-    brain_progression()
+    """Run finding a member of an progressin brain game."""
+    start_game(progression)
 
 
 if __name__ == '__main__':

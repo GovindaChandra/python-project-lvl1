@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
-"""Expression calculation."""
+"""The game of calculating the expression."""
 
-from brain_games.games.expression import brain_calc
+from brain_games.game_engine import start_game
+from brain_games.games import expression
 
 
 def main():
     """Run Expression calculation brain game."""
-    brain_calc()
+    start_game(expression)
 
 
 if __name__ == '__main__':

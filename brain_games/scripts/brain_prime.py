@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
-"""Game the correct answer is an prime or not given a number."""
+"""Game this number is prime or not."""
 
-from brain_games.games.prime import brain_prime
+from brain_games.game_engine import start_game
+from brain_games.games import prime
 
 
 def main():
     """Run Is prime brain game."""
-    brain_prime()
+    start_game(prime)
 
 
 if __name__ == '__main__':
