@@ -17,7 +17,7 @@ def start_game(game):
     print('Hello, {0}!\n'.format(name))
     print(game.GAME_RULE)
     for _ in range(NUMBER_OF_ROUNDS):
-        expression, correct_answer = game.game_data_function()
+        expression, correct_answer = game.game_data_generation()
         print('Question:', expression)
         answer = prompt.string('Your answer: ')
         if answer != correct_answer:
