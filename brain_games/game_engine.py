@@ -1,4 +1,4 @@
-"""Global settings for games."""
+"""Global settings for games and game starting function."""
 
 import prompt
 
