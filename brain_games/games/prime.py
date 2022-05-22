@@ -1,4 +1,4 @@
-"""Expression calculation game logic."""
+"""Is prime? - game logic."""
 
 import math
 import random
