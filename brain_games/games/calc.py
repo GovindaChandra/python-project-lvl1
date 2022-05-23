@@ -20,9 +20,8 @@ def game_data_generation():
     Returns:
         return: a tuple of question and correct answer
     """
-    random_generator = random.Random()
-    num1 = random_generator.randint(1, 100)
-    num2 = random_generator.randint(1, 100)
-    operator = random_generator.choice(('+', '-', '*'))
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    operator = random.choice(('+', '-', '*'))
     correct_answer = _calc(num1, num2, operator)
     return '{0} {1} {2}'.format(num1, operator, num2), str(correct_answer)

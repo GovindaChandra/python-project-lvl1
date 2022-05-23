@@ -11,9 +11,9 @@ def game_data_generation():
     Returns:
         return: a tuple of question and correct answer
     """
-    members_count = random.Random().randint(5, 10)
-    first_num = random.Random().randint(1, 100)
-    diff = random.Random().randint(-members_count, members_count)
+    members_count = random.randint(5, 10)
+    first_num = random.randint(1, 100)
+    diff = random.randint(-members_count, members_count)
     progression = []
     for _ in range(members_count):
         progression.append(first_num)

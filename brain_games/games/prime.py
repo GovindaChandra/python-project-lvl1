@@ -30,7 +30,6 @@ def game_data_generation():
     Returns:
         return: a tuple of question and correct answer
     """
-    random_generator = random.Random()
-    number = random_generator.randint(1, 100)
+    number = random.randint(1, 100)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return str(number), correct_answer
