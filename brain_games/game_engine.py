@@ -6,7 +6,7 @@ NUMBER_OF_ROUNDS = 3
 GAME_OVER = "'{0}' is wrong answer ;(. Correct answer was '{1}'."
 
 
-def start_game(game):
+def start(game):
     """Print greeting, lunch game function.
 
     Parameters:
