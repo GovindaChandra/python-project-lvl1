@@ -15,5 +15,5 @@ def game_data_generation():
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     correct_answer = math.gcd(num1, num2)
-    expression = '{0} {1}'.format(num1, num2)
+    expression = f'{num1} {num2}'
     return expression, str(correct_answer)

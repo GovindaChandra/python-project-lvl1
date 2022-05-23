@@ -24,4 +24,5 @@ def game_data_generation():
     num2 = random.randint(1, 100)
     operator = random.choice(('+', '-', '*'))
     correct_answer = _calc(num1, num2, operator)
-    return '{0} {1} {2}'.format(num1, operator, num2), str(correct_answer)
+    question = f'{num1} {operator} {num2}'
+    return question, str(correct_answer)
