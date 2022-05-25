@@ -3,10 +3,10 @@
 import math
 import random
 
-GAME_RULE = 'Find the greatest common divisor of given numbers.\n'
+RULE = 'Find the greatest common divisor of given numbers.\n'
 
 
-def game_data_generation():
+def data_generation():
     """Generate question and correct answer for game.
 
     Returns:

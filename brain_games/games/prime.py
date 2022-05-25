@@ -3,7 +3,7 @@
 import math
 import random
 
-GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
 
 
 def is_prime(number):
@@ -26,7 +26,7 @@ def is_prime(number):
     return True
 
 
-def game_data_generation():
+def data_generation():
     """Generate question and correct answer for game.
 
     Returns:
@@ -34,4 +34,4 @@ def game_data_generation():
     """
     number = random.randint(1, 100)
     correct_answer = 'yes' if is_prime(number) else 'no'
-    return str(number), correct_answer
+    return number, correct_answer

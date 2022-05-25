@@ -2,7 +2,7 @@
 
 import random
 
-GAME_RULE = 'What is the result of the expression?\n'
+RULE = 'What is the result of the expression?\n'
 
 
 def _calc(num1, num2, operator):
@@ -14,7 +14,7 @@ def _calc(num1, num2, operator):
         return num1 * num2
 
 
-def game_data_generation():
+def data_generation():
     """Generate question and correct answer for game.
 
     Returns:
